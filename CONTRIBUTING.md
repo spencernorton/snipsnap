@@ -15,7 +15,7 @@ pushing: public history, logs and uploaded screenshots are public data.
 
 ## Before you start
 
-- **Bugs** — open a [bug report](https://github.com/spencercnorton/snipsnap/issues/new/choose).
+- **Bugs** — open a [bug report](https://github.com/spencernorton/snipsnap/issues/new/choose).
   A report with reproduction steps, versions and a scrubbed log excerpt is
   usually fixed faster than a pull request that arrives without one. The
   bridge logs a JSON timeline to your user journal
@@ -31,7 +31,7 @@ pushing: public history, logs and uploaded screenshots are public data.
   update checker and no telemetry (see the README); an idea that cuts across
   them needs a conversation before code.
 - **Security** — never in a public issue. Use
-  [private vulnerability reporting](https://github.com/spencercnorton/snipsnap/security/advisories/new);
+  [private vulnerability reporting](https://github.com/spencernorton/snipsnap/security/advisories/new);
   see [SECURITY.md](SECURITY.md).
 
 ## Working on the code
