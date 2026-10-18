@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: SnipSnap
-Source: https://github.com/spencercnorton/snipsnap
+Source: https://github.com/spencernorton/snipsnap
 Comment:
  SnipSnap is a downstream fork of Flameshot,
  https://github.com/flameshot-org/flameshot/ -- almost everything here is

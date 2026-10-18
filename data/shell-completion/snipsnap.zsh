@@ -4,7 +4,7 @@
 # -----------
 #
 #  Completion script for the snipsnap command line interface
-#  (https://github.com/spencercnorton/snipsnap).
+#  (https://github.com/spencernorton/snipsnap).
 #
 # ------------------------------------------------------------------------------
 # How to use

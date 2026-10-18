@@ -1,8 +1,8 @@
 # Support
 
-- **Something is broken** — [open a bug report](https://github.com/spencercnorton/snipsnap/issues/new/choose).
-- **A question, or an idea** — [Discussions](https://github.com/spencercnorton/snipsnap/discussions).
-- **A security problem** — [private vulnerability reporting](https://github.com/spencercnorton/snipsnap/security/advisories/new), never a public issue. See [SECURITY.md](SECURITY.md).
+- **Something is broken** — [open a bug report](https://github.com/spencernorton/snipsnap/issues/new/choose).
+- **A question, or an idea** — [Discussions](https://github.com/spencernorton/snipsnap/discussions).
+- **A security problem** — [private vulnerability reporting](https://github.com/spencernorton/snipsnap/security/advisories/new), never a public issue. See [SECURITY.md](SECURITY.md).
 - **Documentation** — the README and the `docs/` directory in this repository.
 
 This is one developer's project, maintained in the open; there is no

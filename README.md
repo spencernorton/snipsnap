@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="https://norvitech.com"><img alt="NorviTech Suite" src="https://img.shields.io/badge/NorviTech-Suite-FD8024.svg"></a>
-  <a href="https://github.com/spencercnorton/snipsnap/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/spencercnorton/snipsnap/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://github.com/spencercnorton/snipsnap/tags"><img alt="Latest release" src="https://img.shields.io/github/v/tag/spencercnorton/snipsnap?label=release&sort=semver"></a>
+  <a href="https://github.com/spencernorton/snipsnap/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/spencernorton/snipsnap/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/spencernorton/snipsnap/tags"><img alt="Latest release" src="https://img.shields.io/github/v/tag/spencercnorton/snipsnap?label=release&sort=semver"></a>
   <a href="https://apt.globalentry.systems"><img alt="APT repository" src="https://img.shields.io/badge/apt-Ubuntu%2026.04-e95420.svg?logo=ubuntu&logoColor=white"></a>
   <a href="LICENSE"><img alt="Licence" src="https://img.shields.io/badge/licence-GPL--3.0--or--later-blue.svg"></a>
   <a href="https://buy.stripe.com/8x26oH2U44f65TRe574wM04"><img alt="Donate" src="https://img.shields.io/badge/donate-Stripe-635bff.svg?logo=stripe&logoColor=white"></a>
@@ -121,7 +121,7 @@ GNOME Shell bridge needs GNOME Shell 50 or 51. On Debian and Ubuntu:
 
 ```bash
 sudo apt install cmake ninja-build g++ git dbus-daemon libgl-dev qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-svg-dev qt6-l10n-tools
-git clone https://github.com/spencercnorton/snipsnap.git
+git clone https://github.com/spencernorton/snipsnap.git
 cd snipsnap
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBUILD_TESTING=ON \
   -DDISABLE_UPDATE_CHECKER=ON -DENABLE_IMGUR=OFF -DENABLE_GNOME_SHELL_BRIDGE=ON
@@ -191,8 +191,8 @@ Nothing is sent anywhere: SnipSnap makes no network connections at all.
 
 ## Contributing and support
 
-- Bugs and feature requests: [open an issue](https://github.com/spencercnorton/snipsnap/issues/new/choose). Questions: [Discussions](https://github.com/spencercnorton/snipsnap/discussions).
-- Security reports: [private vulnerability reporting](https://github.com/spencercnorton/snipsnap/security/advisories/new) — see [SECURITY.md](SECURITY.md). There is no e-mail address; that is deliberate.
+- Bugs and feature requests: [open an issue](https://github.com/spencernorton/snipsnap/issues/new/choose). Questions: [Discussions](https://github.com/spencernorton/snipsnap/discussions).
+- Security reports: [private vulnerability reporting](https://github.com/spencernorton/snipsnap/security/advisories/new) — see [SECURITY.md](SECURITY.md). There is no e-mail address; that is deliberate.
 - Pull requests are welcome; read [CONTRIBUTING.md](CONTRIBUTING.md) first — changes are reviewed and merged on GitHub, then shipped in tagged releases.
 - If SnipSnap saves you time, you can [support its development](https://buy.stripe.com/8x26oH2U44f65TRe574wM04).
 
@@ -231,14 +231,14 @@ every upstream author and licence is recorded in [NOTICE](NOTICE) and
 </p>
 
 <p align="center">
-  <a href="https://github.com/spencercnorton/helios">Helios</a> ·
-  <a href="https://github.com/spencercnorton/bitagent">BitAgent</a> ·
-  <a href="https://github.com/spencercnorton/xnote">XNote</a> ·
-  <a href="https://github.com/spencercnorton/xnote-placement">XNote Placement</a> ·
-  <a href="https://github.com/spencercnorton/snipsnap">SnipSnap</a> ·
-  <a href="https://github.com/spencercnorton/conductor">Conductor</a> ·
-  <a href="https://github.com/spencercnorton/norvi-os">NorviOS</a> ·
-  <a href="https://github.com/spencercnorton/indigo">Indigo</a> ·
-  <a href="https://github.com/spencercnorton/roadtrack">Road Track</a> ·
+  <a href="https://github.com/spencernorton/helios">Helios</a> ·
+  <a href="https://github.com/spencernorton/bitagent">BitAgent</a> ·
+  <a href="https://github.com/spencernorton/xnote">XNote</a> ·
+  <a href="https://github.com/spencernorton/xnote-placement">XNote Placement</a> ·
+  <a href="https://github.com/spencernorton/snipsnap">SnipSnap</a> ·
+  <a href="https://github.com/spencernorton/conductor">Conductor</a> ·
+  <a href="https://github.com/spencernorton/norvi-os">NorviOS</a> ·
+  <a href="https://github.com/spencernorton/indigo">Indigo</a> ·
+  <a href="https://github.com/spencernorton/roadtrack">Road Track</a> ·
   <a href="https://norvitech.com">norvitech.com</a>
 </p>

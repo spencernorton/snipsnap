@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 class ProductIdentityTest(unittest.TestCase):
     def test_canonical_project_urls_use_snipsnap_slug(self) -> None:
-        canonical_url = "https://github.com/spencercnorton/snipsnap"
+        canonical_url = "https://github.com/spencernorton/snipsnap"
         upstream_url = "https://github.com/flameshot-org/"
         surfaces = (
             ROOT / "SECURITY.md",
