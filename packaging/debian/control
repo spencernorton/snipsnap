@@ -18,9 +18,9 @@ Build-Depends:
  libgl-dev,
 Rules-Requires-Root: no
 Standards-Version: 4.7.2
-Homepage: https://github.com/spencercnorton/snipsnap
-Vcs-Browser: https://github.com/spencercnorton/snipsnap
-Vcs-Git: https://github.com/spencercnorton/snipsnap.git
+Homepage: https://github.com/spencernorton/snipsnap
+Vcs-Browser: https://github.com/spencernorton/snipsnap
+Vcs-Git: https://github.com/spencernorton/snipsnap.git
 
 Package: snipsnap
 Architecture: any

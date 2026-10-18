@@ -5,6 +5,6 @@
   "shell-version": ["50", "51"],
   "session-modes": ["user"],
   "settings-schema": "org.gnome.shell.extensions.flameshot-shell-bridge",
-  "url": "https://github.com/spencercnorton/snipsnap",
+  "url": "https://github.com/spencernorton/snipsnap",
   "version": 1
 }

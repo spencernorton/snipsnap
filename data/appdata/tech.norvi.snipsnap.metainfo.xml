@@ -50,9 +50,9 @@ SPDX-License-Identifier: CC0-1.0
        ours, and five broken images render worse than none. Add them back when
        they are hosted somewhere we control. -->
 
-  <url type="homepage">https://github.com/spencercnorton/snipsnap</url>
-  <url type="bugtracker">https://github.com/spencercnorton/snipsnap/issues</url>
-  <url type="vcs-browser">https://github.com/spencercnorton/snipsnap</url>
+  <url type="homepage">https://github.com/spencernorton/snipsnap</url>
+  <url type="bugtracker">https://github.com/spencernorton/snipsnap/issues</url>
+  <url type="vcs-browser">https://github.com/spencernorton/snipsnap</url>
 
   <update_contact>apt_AT_globalentry.systems</update_contact>
 
