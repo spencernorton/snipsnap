@@ -32,7 +32,9 @@ jobs:
           sudo apt-get update -q
           sudo apt-get install -q -y --no-install-recommends \
             build-essential cmake ninja-build dbus-daemon libgl-dev libglib2.0-bin python3 \
-            qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-svg-dev qt6-l10n-tools debhelper
+            qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-svg-dev qt6-l10n-tools debhelper \
+            gnome-shell gnome-shell-common dbus dbus-bin unzip libgl1-mesa-dri libegl-mesa0 \
+            gsettings-desktop-schemas xwayland at-spi2-core
       # Qt-Color-Widgets and KDSingleApplication are fetched by CMake at pinned commits.
       - name: Configure
         run: |
@@ -53,11 +55,28 @@ jobs:
           dpkg-buildpackage -us -uc -b
           mkdir -p dist
           cp ../snipsnap_*.deb dist/
-          cd dist && sha256sum *.deb > SHA256SUMS.txt
+          cd dist && sha256sum -- *.deb > SHA256SUMS.txt
       - name: Verify packaged install on Ubuntu 26.04
         run: |
           sudo apt-get install -q -y --no-install-recommends ./dist/*.deb
           QT_QPA_PLATFORM=offscreen snipsnap --version
+      - name: Capture across monitors into the packaged Qt editor
+        shell: bash
+        run: |
+          rm -rf /run/systemd/seats
+          mkdir -p /run/dbus
+          dbus-daemon --system --fork
+          useradd --create-home runtime-tester
+          runuser -u runtime-tester -- tests/shell/runtime.sh \
+            /usr/share/gnome-shell/extensions/snipsnap-shell-bridge@kleos.norvi.tech \
+            2>&1 | tee packaged-capture.log
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: packaged-capture-evidence
+          path: packaged-capture.log
+          if-no-files-found: warn
+          retention-days: 14
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: snipsnap-debian-candidate
