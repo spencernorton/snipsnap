@@ -102,3 +102,12 @@ paths. Fill it in — it is what the reviewer reads first.
 By contributing you agree that your contribution is licensed under the
 [GNU General Public License, version 3 or later](LICENSE) that covers the
 project.
+
+The required package build also installs its Debian candidate and runs
+`tests/shell/runtime.sh` in a disposable GNOME Shell 50 session with two virtual
+monitors and software rendering. Native keyboard and pointer input select a
+region across the monitor boundary. The check requires a compositor texture,
+193 × 129 selected pixels decoded by the packaged daemon, a mapped Qt editor,
+and successful capture again after disabling and enabling the bridge. The
+Shell and daemon evidence is retained on failure. This does not qualify physical
+monitor scaling, hardware drivers, or a real desktop's portal configuration.

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Require the installed Debian candidate to capture a region across two GNOME
+  monitors and open the real Qt editor, including after bridge reload.
+
 ## 2.0.4 — 2026-09-27
 
 - Build and install-test Debian packages on Ubuntu 26.04, avoiding the
