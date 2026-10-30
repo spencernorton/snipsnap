@@ -3,7 +3,7 @@ SnipSnap application icon
 
 Copyright © 2026 NorviTech
 
-The SnipSnap aperture-and-crop icon was created as original artwork for this
+The SnipSnap camera-and-crop icon was created as original artwork for this
 project. The initial visual concept was generated with OpenAI image generation,
 then redrawn as project-native SVG artwork and adapted into the raster,
 monochrome, symbolic tray, Windows ICO, and macOS ICNS variants shipped here.

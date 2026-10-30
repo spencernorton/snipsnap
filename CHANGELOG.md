@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Refresh the app and tray icons with a camera-and-crop design.
 - Require the installed Debian candidate to capture a region across two GNOME
   monitors and open the real Qt editor, including after bridge reload.
 
