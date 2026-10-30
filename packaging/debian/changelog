@@ -1,3 +1,10 @@
+snipsnap (2.0.5-1) unstable; urgency=medium
+
+  * Refresh the application and tray icons with a camera-and-crop design.
+  * Verify packaged capture across two GNOME monitors and the Qt editor.
+
+ -- NorviTech <131503564+spencernorton@users.noreply.github.com>  Fri, 30 Oct 2026 11:56:48 +0000
+
 snipsnap (2.0.4-1) unstable; urgency=medium
 
   * Build the Debian package against Ubuntu 26.04.
