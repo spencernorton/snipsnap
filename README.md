@@ -12,17 +12,14 @@
 <p align="center">
   <a href="https://norvitech.com"><img alt="NorviTech Suite" src="https://img.shields.io/badge/NorviTech-Suite-FD8024.svg"></a>
   <a href="https://github.com/spencernorton/snipsnap/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/spencernorton/snipsnap/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://github.com/spencernorton/snipsnap/tags"><img alt="Latest release" src="https://img.shields.io/github/v/tag/spencercnorton/snipsnap?label=release&sort=semver"></a>
-  <a href="https://apt.globalentry.systems"><img alt="APT repository" src="https://img.shields.io/badge/apt-Ubuntu%2026.04-e95420.svg?logo=ubuntu&logoColor=white"></a>
+  <a href="https://github.com/spencernorton/snipsnap/tags"><img alt="Latest release" src="https://img.shields.io/github/v/tag/spencernorton/snipsnap?label=release&sort=semver"></a>
+  <a href="https://norvitech.com/#install"><img alt="APT repository" src="https://img.shields.io/badge/apt-Ubuntu%2026.04-e95420.svg?logo=ubuntu&logoColor=white"></a>
   <a href="LICENSE"><img alt="Licence" src="https://img.shields.io/badge/licence-GPL--3.0--or--later-blue.svg"></a>
   <a href="https://buy.stripe.com/8x26oH2U44f65TRe574wM04"><img alt="Donate" src="https://img.shields.io/badge/donate-Stripe-635bff.svg?logo=stripe&logoColor=white"></a>
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/overlay-dark.png">
-    <img alt="The SnipSnap capture overlay dims a two-monitor GNOME desktop while a selection rectangle is dragged across the seam between the monitors, taking in a text editor on the left monitor and a calculator on the right" src="docs/screenshots/overlay-light.png" width="900">
-  </picture>
+  <picture><source media="(prefers-reduced-motion: reduce)" srcset="docs/screenshots/editor-light.png"><img src="docs/demos/capture-and-annotate.gif" alt="Select a region across two monitors, annotate it with arrows and text, then copy the result." width="900"></picture>
 </p>
 
 <p align="center"><sub>Every picture here is SnipSnap on a headless GNOME Shell 50 session with two virtual monitors, a text editor and a calculator showing invented content, and a free Pexels photograph as the wallpaper; nothing personal appears in them; they were captured with <code>scripts/demo-capture.sh</code>.</sub></p>
@@ -46,9 +43,7 @@ compositor already has the pixels, so there is no portal dialog and no
 per-monitor boundary; the committed region is handed to the SnipSnap
 daemon over a private socket and the editor opens with exactly that region.
 
-<p align="center">
-  <img alt="Print is pressed, the desktop dims, a selection is dragged across two monitors, Return opens the editor, an arrow, a rectangle, a label and a pixelated patch are added, and the result is copied" src="docs/screenshots/flow.png" width="900">
-</p>
+[Recording source and still images](docs/demos/README.md).
 
 **A full editor, in the same process.** Arrows, rectangles, circles,
 freehand pencil, marker, numbered pointers, text, secure pixelation, invert,
@@ -87,7 +82,7 @@ there instead of the built-in editor, and `disable` brings it back.
 Add the repository once and SnipSnap updates with everything else:
 
 ```bash
-curl -fsSL https://apt.globalentry.systems/setup.sh | sudo sh
+curl -fsSL https://apt.norvitech.com/setup.sh | sudo sh
 sudo apt install snipsnap
 ```
 
