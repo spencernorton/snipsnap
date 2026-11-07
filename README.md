@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://norvitech.com"><img alt="NorviTech Suite" src="https://img.shields.io/badge/NorviTech-Suite-FD8024.svg"></a>
   <a href="https://github.com/spencernorton/snipsnap/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/spencernorton/snipsnap/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://github.com/spencernorton/snipsnap/tags"><img alt="Latest release" src="https://img.shields.io/github/v/tag/spencernorton/snipsnap?label=release&sort=semver"></a>
+  <a href="https://github.com/spencernorton/snipsnap/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/spencernorton/snipsnap?label=release"></a>
   <a href="https://norvitech.com/#install"><img alt="APT repository" src="https://img.shields.io/badge/apt-Ubuntu%2026.04-e95420.svg?logo=ubuntu&logoColor=white"></a>
   <a href="LICENSE"><img alt="Licence" src="https://img.shields.io/badge/licence-GPL--3.0--or--later-blue.svg"></a>
   <a href="https://buy.stripe.com/8x26oH2U44f65TRe574wM04"><img alt="Donate" src="https://img.shields.io/badge/donate-Stripe-635bff.svg?logo=stripe&logoColor=white"></a>
@@ -229,6 +229,8 @@ every upstream author and licence is recorded in [NOTICE](NOTICE) and
   <a href="https://github.com/spencernorton/helios">Helios</a> ·
   <a href="https://github.com/spencernorton/DH-Waypoint">DH-Waypoint</a> ·
   <a href="https://github.com/spencernorton/armiger">Armiger</a> ·
+  <a href="https://github.com/spencernorton/arrmes">Arrmes</a> ·
+  <a href="https://github.com/spencernorton/endexis">Endexis</a> ·
   <a href="https://github.com/spencernorton/xnote">XNote</a> ·
   <a href="https://github.com/spencernorton/xnote-placement">XNote Placement</a> ·
   <a href="https://github.com/spencernorton/snipsnap">SnipSnap</a> ·

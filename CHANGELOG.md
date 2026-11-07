@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Align the README suite and release links.
+
 ## 2.0.5 — 2026-10-30
 
 - Refresh the app and tray icons with a camera-and-crop design.
