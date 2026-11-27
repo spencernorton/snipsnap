@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 2.0.6 — 2026-11-27
+
+- Explicitly dispose GNOME Shell capture textures when closing the screenshot
+  overlay and schedule a debounced low-priority GC pass so compositor VRAM is
+  reclaimed promptly after captures.
 - Align the README suite and release links.
 
 ## 2.0.5 — 2026-10-30
