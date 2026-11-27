@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
+import System from 'system';
 import Clutter from 'gi://Clutter';
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
@@ -88,6 +89,7 @@ export default class SnipSnapShellBridgeExtension extends Extension {
         this._dragging = false;
         this._modalGrab = null;
         this._afterPaintId = 0;
+        this._gcIdleId = 0;
         this._captureContent = null;
         this._captureScale = 1;
         this._captureTopology = null;
@@ -190,6 +192,10 @@ export default class SnipSnapShellBridgeExtension extends Extension {
         }
 
         this._cleanupOverlay('disabled');
+        if (this._gcIdleId) {
+            GLib.source_remove(this._gcIdleId);
+            this._gcIdleId = 0;
+        }
         this._settings = null;
         logEvent('disabled');
     }
@@ -1189,12 +1195,22 @@ export default class SnipSnapShellBridgeExtension extends Extension {
             this._modalGrab = null;
         }
 
+        const captureContent = this._captureContent;
+        this._captureContent = null;
+
         if (this._snapshotActor)
             this._snapshotActor.set_content(null);
 
         const hadOverlay = this._root !== null;
         if (this._root)
             this._root.destroy();
+
+        if (captureContent) {
+            try {
+                captureContent.run_dispose?.();
+            } catch {
+            }
+        }
 
         this._root = null;
         this._snapshotActor = null;
@@ -1205,7 +1221,14 @@ export default class SnipSnapShellBridgeExtension extends Extension {
         this._selection = null;
         this._dragAnchor = null;
         this._dragging = false;
-        this._captureContent = null;
+
+        if (captureContent && !this._gcIdleId) {
+            this._gcIdleId = GLib.idle_add(GLib.PRIORITY_LOW, () => {
+                this._gcIdleId = 0;
+                System.gc();
+                return GLib.SOURCE_REMOVE;
+            });
+        }
         this._captureScale = 1;
         this._captureTopology = null;
         this._activeRequest = null;
